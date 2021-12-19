@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 
 class ApiService {
-  String baseUrl = "http://10.20.234.203:8000/api/";
+  String baseUrl = "http://192.168.3.51:8000/api/";
 
   Future<List<UserModel>> getUser() async {
     Uri urlUri = Uri.parse(baseUrl + 'getAllUser');
@@ -70,7 +70,6 @@ class ApiService {
     );
 
     if(response.statusCode == 200){
-
       return true;
     }else{
       return false;

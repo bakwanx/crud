@@ -286,7 +286,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
                       )
                   ),
                   child: Text(
-                    'Tambah',
+                    isEmpty == true ? 'Tambah' : 'Rubah',
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.white
